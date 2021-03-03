@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e68f6cb98d.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+ <main>
+
+    <div class="email">
+        <h1>Login Validation</h1>
+    <form action="" class="formulario" id="formulario">
+      <!--Grupo:Correo Electronico-->
+      
+        <label for="email" class="formulario__label__login">Email</label>
+             <div class="formulario__grupo-input">
+                 <input type="text" class="formulario__input__login" name="email" id="email" placeholder="correo@correo.com">
+                <p class="regex__login" id="regexValidate">Enter valid email. </p> 
+                <p class="please" id="validate">Enter email adress.</p>
+              </div>
+             
+               <!--Grupo:Password-->
+           
+            <label for="password" class="formulario__label__login">Password</label>
+                 <div class="formulario__grupo-input">
+                     <input type="password" class="formulario__input__login" name="password" id="password" placeholder="">
+                     
+                 </div>
+                 <p class="regex__login" id="regexPass">At least one capital letter, one number and at least 8 characters.</p>
+                 <p class="please" id="passwordValidate">Please, enter a password</p>
+                 <button type="submit" class="button1" value="">Send</button>
+        
+    </form>
+
+    </div>
+ </main>
+    <script src="app.js"></script>
+</body>
+</html>
